@@ -1,11 +1,14 @@
 import React from 'react';
 
-const TechnoAdd = () => {
+const TechnoAdd = (props) => {
+    const {handleAddTechno} = props;
     return (
         <div className='techno-add'>
             <h1>Add a Techno</h1>
 
-            <form action="">
+{/* comme on ne veut pas que la fonction soit appelée tout de suite mais lui passer un évènement, on utilise, pour rappel, une function flechée
+ce qui retarde l'appel de handleAddTechno */}
+            <form onSubmit={(e)=>handleAddTechno(e)}>
                 <label htmlFor="techno-name">Name</label>
                 <input id='techno-name' name='techno-name' type="text" />
                 <br />
@@ -29,4 +32,4 @@ const TechnoAdd = () => {
     );
 }
 
-export default TechnoAdd;
+export default TechnoAdd();
