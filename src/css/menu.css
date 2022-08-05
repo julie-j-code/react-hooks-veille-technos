@@ -1,0 +1,19 @@
+.menu ul{
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-around;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu .activelink{
+    font-weight: 600;
+    color: deepskyblue;
+}

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import{Routes, Route} from 'react-router-dom'
 import './App.css';
+import Home from './pages/Home';
+import Menu from './components/Menu';
+import TechnoAdd from './components/TechnoAdd';
+import TechnoList from './pages/TechnosList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Menu />
+      {/* en dessous, c'est l'équivalent du routeroutlet d'Angular */}
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/add' element={<TechnoAdd/>}/>
+        <Route path='/list' element={<TechnoList/>}/>
+      </Routes>
+
     </div>
   );
 }

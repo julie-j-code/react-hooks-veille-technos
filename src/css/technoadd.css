@@ -1,0 +1,11 @@
+.techno-add{
+    padding: 20px;
+}
+form, input, textarea, select{
+    padding: 1rem 2rem;
+}
+
+label{margin-bottom: 1rem;}
+
+form{display: flex;
+flex-direction: column;}
