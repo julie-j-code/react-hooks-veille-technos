@@ -1,5 +1,7 @@
+import { useState } from "react";
+
 const TechnoItem = (props) => {
-    const { techno } = props
+    const { techno, handleDeleteTechno } = props;
     return (
         <div key={techno.technoid} className="card">
             <h2>{techno.technoname}</h2>
@@ -7,6 +9,9 @@ const TechnoItem = (props) => {
             <h4>{techno.category}</h4>
             <h3>Description :</h3>
             <p>{techno.description}</p>
+            <div className="footer">
+                <button className="btn-delete" onClick={() => handleDeleteTechno(techno.technoid)}>delete</button>
+            </div>
         </div>
     );
 }

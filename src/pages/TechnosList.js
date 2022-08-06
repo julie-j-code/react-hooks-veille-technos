@@ -1,16 +1,18 @@
+import { useState } from "react";
 import TechnoItem from "../components/TechnoItem";
 
 const TechnosList = (props) => {
 
-    // const {technos}=props
-    const technos = props.technos
-    
+    const { technos, handleDeleteTechno } = props;
+
 
     return (
         <div className='technos-list'>
             <h1>All Technos</h1>
             {technos.map((techno) => {
-                return <TechnoItem techno={techno}/>
+                return <TechnoItem
+                    techno={techno}
+                    handleDeleteTechno={handleDeleteTechno} />
             })}
         </div>
     );
