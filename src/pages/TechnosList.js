@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TechnoItem from "../components/TechnoItem";
 
 const TechnosList = (props) => {
