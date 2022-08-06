@@ -1,13 +1,19 @@
-import React from 'react';
+import TechnoItem from "../components/TechnoItem";
 
-const TechnoList = () => {
+const TechnosList = (props) => {
+
+    // const {technos}=props
+    const technos = props.technos
+    
+
     return (
         <div className='technos-list'>
             <h1>All Technos</h1>
-            <p>Todo display all technos added</p>
-            
+            {technos.map((techno) => {
+                return <TechnoItem techno={techno}/>
+            })}
         </div>
     );
 }
 
-export default TechnoList;
+export default TechnosList;

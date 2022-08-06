@@ -8,10 +8,20 @@ export default function TechnoAd(props) {
         technoname: '',
         category: '',
         description: ''
+
     });
     function handleSubmit(e) {
         e.preventDefault();
-        handleAddTechno(techno)
+        handleAddTechno(techno);
+        setTechno(
+            {
+                ...techno,
+                technoname: '',
+                category: '',
+                description: ''
+
+            }
+        )
 
     }
 
@@ -25,8 +35,6 @@ export default function TechnoAd(props) {
     return (
         <div className='techno-add'>
             <h1>Add a Techno</h1>
-
-            {/* comme on ne veut pas que la fonction soit appelée tout de suite mais lui passer un évènement, on utilise, pour rappel, une function flechée ce qui retarde l'appel de handleAddTechno. Par ailleurs, c'est une convention de passer par une function intermédiaire handleSubmit qui elle-même fera appel à handelAddTechno */}
             <form onSubmit={(e) => handleSubmit(e)}>
                 <label htmlFor="technoname">Name</label>
                 <input id='technoname' name='technoname' type="text" value={techno.technoname} onChange={(e) => handleChange(e)} />
@@ -34,10 +42,10 @@ export default function TechnoAd(props) {
                 <label htmlFor="category">Category</label>
                 <select id='category' name='category' type="text" value={techno.category} onChange={(e) => handleChange(e)}>
                     <option value="">Select a category</option>
-                    <option value="">Back</option>
-                    <option value="">Front</option>
-                    <option value="">FullStack</option>
-                    <option value="">Autre</option>
+                    <option value="Back">Back</option>
+                    <option value="Front">Front</option>
+                    <option value="Fullstack">FullStack</option>
+                    <option value="Autre">Autre</option>
                 </select>
                 <br />
                 <label htmlFor="description">Description</label>

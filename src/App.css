@@ -2,6 +2,7 @@
 @import './css/menu.css';
 @import './css/technoadd.css';
 @import './css/technoslist.css';
+@import './css/technoitem.css';
 
 .home, .techno-add, .technos-list{
     width: 75vw;
