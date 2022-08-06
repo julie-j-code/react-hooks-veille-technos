@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c56f7b6.css",
-    "main.js": "/static/js/main.d98d806d.js",
-    "static/js/787.8b6914b6.chunk.js": "/static/js/787.8b6914b6.chunk.js",
-    "index.html": "/index.html",
-    "main.5c56f7b6.css.map": "/static/css/main.5c56f7b6.css.map",
-    "main.d98d806d.js.map": "/static/js/main.d98d806d.js.map",
-    "787.8b6914b6.chunk.js.map": "/static/js/787.8b6914b6.chunk.js.map"
+    "main.css": "/react-hooks-veille-technos/static/css/main.5c56f7b6.css",
+    "main.js": "/react-hooks-veille-technos/static/js/main.1a4836e3.js",
+    "static/js/787.8b6914b6.chunk.js": "/react-hooks-veille-technos/static/js/787.8b6914b6.chunk.js",
+    "index.html": "/react-hooks-veille-technos/index.html",
+    "main.5c56f7b6.css.map": "/react-hooks-veille-technos/static/css/main.5c56f7b6.css.map",
+    "main.1a4836e3.js.map": "/react-hooks-veille-technos/static/js/main.1a4836e3.js.map",
+    "787.8b6914b6.chunk.js.map": "/react-hooks-veille-technos/static/js/787.8b6914b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c56f7b6.css",
-    "static/js/main.d98d806d.js"
+    "static/js/main.1a4836e3.js"
   ]
 }
